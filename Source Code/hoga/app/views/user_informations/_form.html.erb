@@ -1,0 +1,837 @@
+<%= form_with(model: user_information, local: true) do |form| %>
+  <% if user_information.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user_information.errors.count, "error") %> prohibited this user_information from being saved:</h2>
+
+      <ul>
+      <% user_information.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :residentschoolcode %>
+    <%= form.text_field :residentschoolcode, id: :user_information_residentschoolcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stateid %>
+    <%= form.text_field :stateid, id: :user_information_stateid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :districtentrydate %>
+    <%= form.text_field :districtentrydate, id: :user_information_districtentrydate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :user_information_localstudentid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suffix %>
+    <%= form.text_field :suffix, id: :user_information_suffix %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dateofbirth %>
+    <%= form.text_field :dateofbirth, id: :user_information_dateofbirth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentgradelevel %>
+    <%= form.text_field :studentgradelevel, id: :user_information_studentgradelevel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :residencystatus %>
+    <%= form.text_field :residencystatus, id: :user_information_residencystatus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entrydate %>
+    <%= form.text_field :entrydate, id: :user_information_entrydate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entrycode %>
+    <%= form.text_field :entrycode, id: :user_information_entrycode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exitdate %>
+    <%= form.text_field :exitdate, id: :user_information_exitdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exitcode %>
+    <%= form.text_field :exitcode, id: :user_information_exitcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exitdestdistrictcode %>
+    <%= form.text_field :exitdestdistrictcode, id: :user_information_exitdestdistrictcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exitdestschoolcode %>
+    <%= form.text_field :exitdestschoolcode, id: :user_information_exitdestschoolcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exitdestcomment %>
+    <%= form.text_field :exitdestcomment, id: :user_information_exitdestcomment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk1att %>
+    <%= form.text_field :wk1att, id: :user_information_wk1att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk1abs %>
+    <%= form.text_field :wk1abs, id: :user_information_wk1abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk1total %>
+    <%= form.text_field :wk1total, id: :user_information_wk1total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk1average %>
+    <%= form.text_field :wk1average, id: :user_information_wk1average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk2att %>
+    <%= form.text_field :wk2att, id: :user_information_wk2att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk2abs %>
+    <%= form.text_field :wk2abs, id: :user_information_wk2abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk2total %>
+    <%= form.text_field :wk2total, id: :user_information_wk2total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk2average %>
+    <%= form.text_field :wk2average, id: :user_information_wk2average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk2avatt %>
+    <%= form.text_field :wk2avatt, id: :user_information_wk2avatt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk3att %>
+    <%= form.text_field :wk3att, id: :user_information_wk3att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk3abs %>
+    <%= form.text_field :wk3abs, id: :user_information_wk3abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk3total %>
+    <%= form.text_field :wk3total, id: :user_information_wk3total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk3average %>
+    <%= form.text_field :wk3average, id: :user_information_wk3average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk3attav %>
+    <%= form.text_field :wk3attav, id: :user_information_wk3attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk4att %>
+    <%= form.text_field :wk4att, id: :user_information_wk4att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk4abs %>
+    <%= form.text_field :wk4abs, id: :user_information_wk4abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk4total %>
+    <%= form.text_field :wk4total, id: :user_information_wk4total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk4average %>
+    <%= form.text_field :wk4average, id: :user_information_wk4average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk4attav %>
+    <%= form.text_field :wk4attav, id: :user_information_wk4attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk5att %>
+    <%= form.text_field :wk5att, id: :user_information_wk5att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk5abs %>
+    <%= form.text_field :wk5abs, id: :user_information_wk5abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk5total %>
+    <%= form.text_field :wk5total, id: :user_information_wk5total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk5average %>
+    <%= form.text_field :wk5average, id: :user_information_wk5average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk5attav %>
+    <%= form.text_field :wk5attav, id: :user_information_wk5attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk6att %>
+    <%= form.text_field :wk6att, id: :user_information_wk6att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk6abs %>
+    <%= form.text_field :wk6abs, id: :user_information_wk6abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk6total %>
+    <%= form.text_field :wk6total, id: :user_information_wk6total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk6average %>
+    <%= form.text_field :wk6average, id: :user_information_wk6average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk6attav %>
+    <%= form.text_field :wk6attav, id: :user_information_wk6attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk7att %>
+    <%= form.text_field :wk7att, id: :user_information_wk7att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk7abs %>
+    <%= form.text_field :wk7abs, id: :user_information_wk7abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk7total %>
+    <%= form.text_field :wk7total, id: :user_information_wk7total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk7average %>
+    <%= form.text_field :wk7average, id: :user_information_wk7average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk7attav %>
+    <%= form.text_field :wk7attav, id: :user_information_wk7attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk8att %>
+    <%= form.text_field :wk8att, id: :user_information_wk8att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk8abs %>
+    <%= form.text_field :wk8abs, id: :user_information_wk8abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk8total %>
+    <%= form.text_field :wk8total, id: :user_information_wk8total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk8average %>
+    <%= form.text_field :wk8average, id: :user_information_wk8average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk8attav %>
+    <%= form.text_field :wk8attav, id: :user_information_wk8attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk9att %>
+    <%= form.text_field :wk9att, id: :user_information_wk9att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk9abs %>
+    <%= form.text_field :wk9abs, id: :user_information_wk9abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk9total %>
+    <%= form.text_field :wk9total, id: :user_information_wk9total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk9average %>
+    <%= form.text_field :wk9average, id: :user_information_wk9average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk9attav %>
+    <%= form.text_field :wk9attav, id: :user_information_wk9attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk10att %>
+    <%= form.text_field :wk10att, id: :user_information_wk10att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk10abs %>
+    <%= form.text_field :wk10abs, id: :user_information_wk10abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk10total %>
+    <%= form.text_field :wk10total, id: :user_information_wk10total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk10average %>
+    <%= form.text_field :wk10average, id: :user_information_wk10average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk10attav %>
+    <%= form.text_field :wk10attav, id: :user_information_wk10attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk11att %>
+    <%= form.text_field :wk11att, id: :user_information_wk11att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk11abs %>
+    <%= form.text_field :wk11abs, id: :user_information_wk11abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk11total %>
+    <%= form.text_field :wk11total, id: :user_information_wk11total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk11average %>
+    <%= form.text_field :wk11average, id: :user_information_wk11average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk11attav %>
+    <%= form.text_field :wk11attav, id: :user_information_wk11attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk12att %>
+    <%= form.text_field :wk12att, id: :user_information_wk12att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk12abs %>
+    <%= form.text_field :wk12abs, id: :user_information_wk12abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk12total %>
+    <%= form.text_field :wk12total, id: :user_information_wk12total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk12average %>
+    <%= form.text_field :wk12average, id: :user_information_wk12average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk12attav %>
+    <%= form.text_field :wk12attav, id: :user_information_wk12attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk13att %>
+    <%= form.text_field :wk13att, id: :user_information_wk13att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk13abs %>
+    <%= form.text_field :wk13abs, id: :user_information_wk13abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk13total %>
+    <%= form.text_field :wk13total, id: :user_information_wk13total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk13average %>
+    <%= form.text_field :wk13average, id: :user_information_wk13average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk13attav %>
+    <%= form.text_field :wk13attav, id: :user_information_wk13attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk14att %>
+    <%= form.text_field :wk14att, id: :user_information_wk14att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk14abs %>
+    <%= form.text_field :wk14abs, id: :user_information_wk14abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk14total %>
+    <%= form.text_field :wk14total, id: :user_information_wk14total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk14average %>
+    <%= form.text_field :wk14average, id: :user_information_wk14average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk14attav %>
+    <%= form.text_field :wk14attav, id: :user_information_wk14attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk15att %>
+    <%= form.text_field :wk15att, id: :user_information_wk15att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk15abs %>
+    <%= form.text_field :wk15abs, id: :user_information_wk15abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk15total %>
+    <%= form.text_field :wk15total, id: :user_information_wk15total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk15average %>
+    <%= form.text_field :wk15average, id: :user_information_wk15average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk15attav %>
+    <%= form.text_field :wk15attav, id: :user_information_wk15attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk16att %>
+    <%= form.text_field :wk16att, id: :user_information_wk16att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk16abs %>
+    <%= form.text_field :wk16abs, id: :user_information_wk16abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk16total %>
+    <%= form.text_field :wk16total, id: :user_information_wk16total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk16average %>
+    <%= form.text_field :wk16average, id: :user_information_wk16average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk16attav %>
+    <%= form.text_field :wk16attav, id: :user_information_wk16attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk17att %>
+    <%= form.text_field :wk17att, id: :user_information_wk17att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk17abs %>
+    <%= form.text_field :wk17abs, id: :user_information_wk17abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk17total %>
+    <%= form.text_field :wk17total, id: :user_information_wk17total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk17average %>
+    <%= form.text_field :wk17average, id: :user_information_wk17average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk17attav %>
+    <%= form.text_field :wk17attav, id: :user_information_wk17attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk18att %>
+    <%= form.text_field :wk18att, id: :user_information_wk18att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk18abs %>
+    <%= form.text_field :wk18abs, id: :user_information_wk18abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk18total %>
+    <%= form.text_field :wk18total, id: :user_information_wk18total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk18average %>
+    <%= form.text_field :wk18average, id: :user_information_wk18average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk18attav %>
+    <%= form.text_field :wk18attav, id: :user_information_wk18attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk19att %>
+    <%= form.text_field :wk19att, id: :user_information_wk19att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk19abs %>
+    <%= form.text_field :wk19abs, id: :user_information_wk19abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk19total %>
+    <%= form.text_field :wk19total, id: :user_information_wk19total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk19average %>
+    <%= form.text_field :wk19average, id: :user_information_wk19average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk19attav %>
+    <%= form.text_field :wk19attav, id: :user_information_wk19attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk20att %>
+    <%= form.text_field :wk20att, id: :user_information_wk20att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk20abs %>
+    <%= form.text_field :wk20abs, id: :user_information_wk20abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk20total %>
+    <%= form.text_field :wk20total, id: :user_information_wk20total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk20average %>
+    <%= form.text_field :wk20average, id: :user_information_wk20average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk20attav %>
+    <%= form.text_field :wk20attav, id: :user_information_wk20attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk21att %>
+    <%= form.text_field :wk21att, id: :user_information_wk21att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk21abs %>
+    <%= form.text_field :wk21abs, id: :user_information_wk21abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk21total %>
+    <%= form.text_field :wk21total, id: :user_information_wk21total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk21average %>
+    <%= form.text_field :wk21average, id: :user_information_wk21average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk21attav %>
+    <%= form.text_field :wk21attav, id: :user_information_wk21attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk22att %>
+    <%= form.text_field :wk22att, id: :user_information_wk22att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk22abs %>
+    <%= form.text_field :wk22abs, id: :user_information_wk22abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk22total %>
+    <%= form.text_field :wk22total, id: :user_information_wk22total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk22average %>
+    <%= form.text_field :wk22average, id: :user_information_wk22average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk22attav %>
+    <%= form.text_field :wk22attav, id: :user_information_wk22attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk23att %>
+    <%= form.text_field :wk23att, id: :user_information_wk23att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk23abs %>
+    <%= form.text_field :wk23abs, id: :user_information_wk23abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk23total %>
+    <%= form.text_field :wk23total, id: :user_information_wk23total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk23average %>
+    <%= form.text_field :wk23average, id: :user_information_wk23average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk23attav %>
+    <%= form.text_field :wk23attav, id: :user_information_wk23attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk24att %>
+    <%= form.text_field :wk24att, id: :user_information_wk24att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk24abs %>
+    <%= form.text_field :wk24abs, id: :user_information_wk24abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk24total %>
+    <%= form.text_field :wk24total, id: :user_information_wk24total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk24average %>
+    <%= form.text_field :wk24average, id: :user_information_wk24average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk24attav %>
+    <%= form.text_field :wk24attav, id: :user_information_wk24attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk25att %>
+    <%= form.text_field :wk25att, id: :user_information_wk25att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk25abs %>
+    <%= form.text_field :wk25abs, id: :user_information_wk25abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk25total %>
+    <%= form.text_field :wk25total, id: :user_information_wk25total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk25average %>
+    <%= form.text_field :wk25average, id: :user_information_wk25average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk25attav %>
+    <%= form.text_field :wk25attav, id: :user_information_wk25attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk26att %>
+    <%= form.text_field :wk26att, id: :user_information_wk26att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk26abs %>
+    <%= form.text_field :wk26abs, id: :user_information_wk26abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk26total %>
+    <%= form.text_field :wk26total, id: :user_information_wk26total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk26average %>
+    <%= form.text_field :wk26average, id: :user_information_wk26average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk26attav %>
+    <%= form.text_field :wk26attav, id: :user_information_wk26attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk27att %>
+    <%= form.text_field :wk27att, id: :user_information_wk27att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk27abs %>
+    <%= form.text_field :wk27abs, id: :user_information_wk27abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk27total %>
+    <%= form.text_field :wk27total, id: :user_information_wk27total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk27average %>
+    <%= form.text_field :wk27average, id: :user_information_wk27average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk27attav %>
+    <%= form.text_field :wk27attav, id: :user_information_wk27attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk28att %>
+    <%= form.text_field :wk28att, id: :user_information_wk28att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk28abs %>
+    <%= form.text_field :wk28abs, id: :user_information_wk28abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk28total %>
+    <%= form.text_field :wk28total, id: :user_information_wk28total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk28average %>
+    <%= form.text_field :wk28average, id: :user_information_wk28average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk28attav %>
+    <%= form.text_field :wk28attav, id: :user_information_wk28attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk29att %>
+    <%= form.text_field :wk29att, id: :user_information_wk29att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk29abs %>
+    <%= form.text_field :wk29abs, id: :user_information_wk29abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk29total %>
+    <%= form.text_field :wk29total, id: :user_information_wk29total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk29average %>
+    <%= form.text_field :wk29average, id: :user_information_wk29average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk29attav %>
+    <%= form.text_field :wk29attav, id: :user_information_wk29attav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk30att %>
+    <%= form.text_field :wk30att, id: :user_information_wk30att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk30abs %>
+    <%= form.text_field :wk30abs, id: :user_information_wk30abs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk30total %>
+    <%= form.text_field :wk30total, id: :user_information_wk30total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk30average %>
+    <%= form.text_field :wk30average, id: :user_information_wk30average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wk30attav %>
+    <%= form.text_field :wk30attav, id: :user_information_wk30attav %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

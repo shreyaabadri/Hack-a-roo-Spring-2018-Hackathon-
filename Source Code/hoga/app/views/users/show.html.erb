@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <p class='form-control half_width'><%= @user.name %>
+</p>
+
+<p>
+  <strong>Reg number:</strong>
+  <p class='form-control half_width'> <%= @user.reg_number %> </p>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <p class='form-control half_width'> <%= @user.phone %> </p>
+</p>
+
+<p>
+  <strong>Year of adm:</strong>
+  <p class='form-control half_width'> <%= @user.year_of_adm %> </p>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <p class='form-control half_width'> <%= @user.department.name %> </p>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Back', users_path %>
+

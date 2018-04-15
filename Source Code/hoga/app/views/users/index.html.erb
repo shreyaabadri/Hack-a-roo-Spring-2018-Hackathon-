@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+<div class='home'>
+  <h3>Name: <%= current_user.name%></h1>
+  <p id="notice"><%= notice %></p>
+  <%unless current_user.admin?%>
+    <p>
+    <strong>School:</strong>
+    <p class='form-control half_width'> <%= current_user.name %>
+    </p>
+    <p>
+    <strong>Student ID:</strong>
+    <p class='form-control half_width'> <%= current_user.school_name %>
+    </p>
+    <p>
+    <strong>SSN:</strong>
+    <p class='form-control half_width'> <%= current_user.student_id %>
+    </p>
+    <p>
+    <strong>PSID:</strong>
+    <p class='form-control half_width'> <%= current_user.ps_id %>
+    </p>
+    </div>
+    <br>
+    <%= form_for UserInformation.new do |f| %>
+      <%= f.file_field :picture %>
+      <div><%= f.submit 'Save' %></div>
+    <% end %>
+  <%else%>
+    <table style="width: 100%;" class='col-md-12'>
+      <tr>
+          <td class='col-md-4' style="border:1pt solid black;"><center><h5><%= link_to "Attendance", users_path(type: 'Attendance') %></h5></center></td>
+          <td class='col-md-4' style="border:1pt solid black;"><center><h5><%= link_to 'Student Growth', users_path(type: 'Student Growth') %></h5></center></td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="overflow-x: scroll;">
+        <table border=1>
+          <thead>
+            <tr>
+              <th style='min-width: 30%;' >Student ID</th>
+              <th style='min-width: 30%;' >Grade</th>
+              <th style='min-width: 30%;' >Attendance Score</th>
+              <th style='min-width: 100px;' >Achievement Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @user_informations.each do |user_information| %>
+            <tr>
+              <td><%= user_information.user_id %></td>
+              <td><%= user_information.studentgradelevel %></td>
+              <td class=<%= check_data(user_information.avg_score) %> ><%= user_information.avg_score %></td>
+              <td class=<%= check_data_ac(user_information.achievement) %> ><%= user_information.achievement %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+  <% end %>
